@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2BC50A5D2C53296D001AC652 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BC50A5C2C53296D001AC652 /* main.cpp */; };
+		2BC50A7D2C532FA4001AC652 /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BC50A7B2C532FA4001AC652 /* Block.cpp */; };
+		2BC50A842C534664001AC652 /* BlockGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BC50A822C534664001AC652 /* BlockGrid.cpp */; };
+		2BC50A9D2C5365F5001AC652 /* CoordinatedBlockGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BC50A9B2C5365F5001AC652 /* CoordinatedBlockGrid.cpp */; };
+		2BC50AA12C547A8E001AC652 /* SimpleBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BC50A9F2C547A8E001AC652 /* SimpleBlock.cpp */; };
+		2BC50AA72C547B11001AC652 /* CoordinatedBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BC50AA52C547B11001AC652 /* CoordinatedBlock.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,17 @@
 /* Begin PBXFileReference section */
 		2BC50A592C53296D001AC652 /* Blocks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Blocks; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC50A5C2C53296D001AC652 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2BC50A7B2C532FA4001AC652 /* Block.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Block.cpp; sourceTree = "<group>"; };
+		2BC50A7C2C532FA4001AC652 /* Block.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Block.hpp; sourceTree = "<group>"; };
+		2BC50A822C534664001AC652 /* BlockGrid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BlockGrid.cpp; sourceTree = "<group>"; };
+		2BC50A832C534664001AC652 /* BlockGrid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BlockGrid.hpp; sourceTree = "<group>"; };
+		2BC50A9B2C5365F5001AC652 /* CoordinatedBlockGrid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CoordinatedBlockGrid.cpp; path = Blocks/CoordinatedBlock/CoordinatedBlockGrid.cpp; sourceTree = SOURCE_ROOT; };
+		2BC50A9C2C5365F5001AC652 /* CoordinatedBlockGrid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CoordinatedBlockGrid.hpp; path = Blocks/CoordinatedBlock/CoordinatedBlockGrid.hpp; sourceTree = SOURCE_ROOT; };
+		2BC50A9F2C547A8E001AC652 /* SimpleBlock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleBlock.cpp; sourceTree = "<group>"; };
+		2BC50AA02C547A8E001AC652 /* SimpleBlock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SimpleBlock.hpp; sourceTree = "<group>"; };
+		2BC50AA52C547B11001AC652 /* CoordinatedBlock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CoordinatedBlock.cpp; sourceTree = "<group>"; };
+		2BC50AA62C547B11001AC652 /* CoordinatedBlock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CoordinatedBlock.hpp; sourceTree = "<group>"; };
+		2BC50AA82C547B7A001AC652 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +57,9 @@
 		2BC50A502C53296D001AC652 = {
 			isa = PBXGroup;
 			children = (
+				2BC50AA82C547B7A001AC652 /* README.md */,
 				2BC50A5B2C53296D001AC652 /* Blocks */,
+				2BC50A5C2C53296D001AC652 /* main.cpp */,
 				2BC50A5A2C53296D001AC652 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,9 +75,42 @@
 		2BC50A5B2C53296D001AC652 /* Blocks */ = {
 			isa = PBXGroup;
 			children = (
-				2BC50A5C2C53296D001AC652 /* main.cpp */,
+				2BC50AA22C547AB3001AC652 /* Block */,
+				2BC50AA42C547AC2001AC652 /* CoordinatedBlock */,
+				2BC50A9E2C547A6C001AC652 /* SimpleBlock */,
 			);
 			path = Blocks;
+			sourceTree = "<group>";
+		};
+		2BC50A9E2C547A6C001AC652 /* SimpleBlock */ = {
+			isa = PBXGroup;
+			children = (
+				2BC50AA02C547A8E001AC652 /* SimpleBlock.hpp */,
+				2BC50A9F2C547A8E001AC652 /* SimpleBlock.cpp */,
+			);
+			path = SimpleBlock;
+			sourceTree = "<group>";
+		};
+		2BC50AA22C547AB3001AC652 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				2BC50A7C2C532FA4001AC652 /* Block.hpp */,
+				2BC50A7B2C532FA4001AC652 /* Block.cpp */,
+				2BC50A832C534664001AC652 /* BlockGrid.hpp */,
+				2BC50A822C534664001AC652 /* BlockGrid.cpp */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		2BC50AA42C547AC2001AC652 /* CoordinatedBlock */ = {
+			isa = PBXGroup;
+			children = (
+				2BC50AA62C547B11001AC652 /* CoordinatedBlock.hpp */,
+				2BC50AA52C547B11001AC652 /* CoordinatedBlock.cpp */,
+				2BC50A9C2C5365F5001AC652 /* CoordinatedBlockGrid.hpp */,
+				2BC50A9B2C5365F5001AC652 /* CoordinatedBlockGrid.cpp */,
+			);
+			path = CoordinatedBlock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC50AA72C547B11001AC652 /* CoordinatedBlock.cpp in Sources */,
+				2BC50AA12C547A8E001AC652 /* SimpleBlock.cpp in Sources */,
 				2BC50A5D2C53296D001AC652 /* main.cpp in Sources */,
+				2BC50A842C534664001AC652 /* BlockGrid.cpp in Sources */,
+				2BC50A9D2C5365F5001AC652 /* CoordinatedBlockGrid.cpp in Sources */,
+				2BC50A7D2C532FA4001AC652 /* Block.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
