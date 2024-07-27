@@ -6,7 +6,7 @@ The block class was concieved of as my own way of being able to render and acess
 
 * In another thought expirement, I decided that i would probably be best to always have a rectangular grid for consistency in access operations. However, special block types may be able to skip over empty blocks, saving us time and processing power.
 	
-	-	0	1	2	3	
+	\-	0	1	2	3
 	
 	0	O	O	O	O
 	
